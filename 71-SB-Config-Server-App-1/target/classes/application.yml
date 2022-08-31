@@ -1,0 +1,15 @@
+#server port
+server:
+  port: 7090
+  
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri:  https://github.com/sudha-indi/Config-Properties.git # Git repository location
+          clone-on-start:  true   #verify any repository issue in service startup
+          
+# Disable security of the management endpoint to false
+management.security.enabled :false
