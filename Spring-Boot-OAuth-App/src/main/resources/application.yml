@@ -1,0 +1,16 @@
+#below security url will be given by the manager in the company .we need to configure it
+# we cant go with comapany oauth server details so we are configuring git hub details
+security:
+  oauth2:
+    client:
+      client-id: a6d29b964962fe1fa40d 
+      client-secret: 00f8740808df013e7962e13106e36828d77e7e40 
+      access-token-uri: https://github.com/login/oauth/access_token
+      user-authorization-uri: https://github.com/login/oauth/authorize
+      client-authentication-scheme: form
+    resource:
+      user-info-uri: https://api.github.com/user
+      
+server:
+  port: 7090      
+        
